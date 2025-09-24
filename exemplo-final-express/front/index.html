@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas</title>
+</head>
+<body>
+    <form action="http://localhost:3000/disciplinas" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <label for="Sigla">Sigla</label>
+        <input type="sigla" name="sigla">
+        <label for="descricao">Descrição</label>
+        <input type="text" name="descricao">
+        <button>Cadastrar</button>
+
+    </form>
+
+    <form action="http://localhost:3000/disciplinas" method="get">
+        <label for="sigla">Sigla</label>
+        <input type="text" id="sigla" name="sigla">
+        <button>Buscar</button>
+    </form>
+</body>
+</html>
