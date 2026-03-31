@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body{
+    background-color: rgb(225, 204, 175);
+    min-height: 99vh;
+}
+
+header{
+    border: 1px solid black;
+    background-color: black;
+
+}
+
+ul{
+    text-align: center;
+}
+
+nav{
+    border: 1px solid blue;
+}
+
+li{
+    display: inline-block;
+    line-height: 3vh;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+    margin: 0 2rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+form{
+    border: 2px solid black;
+    width: 50%;
+    margin: 0 auto;
+    height: max-content;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+label,input{
+    display: block;
+    margin: 1rem auto;
+}
+
+input{
+    width: 40%;
+    line-height: 2rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+button{
+    width: 20%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#criar-conta{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer{
+    
+}*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background: #f3f4f6;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 60px 120px 1fr;
+    grid-template-areas: 
+        "navbar navbar"
+        "sidebar header"
+        "sidebar content"
+    ;
+    height: 100vh;
+}
+
+.navbar{
+    grid-area: navbar;
+    background: #131921;
+    color: white;
+    padding: 10px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background: white;
+    padding: 15px;
+}
+
+.header{
+    grid-area: header;
+    background: linear-gradient(90deg, #ff9900,#ff6600);
+    color: white;
+    padding: 20px;;
+}
+
+.content{
+    grid-area: content;
+    padding: 1.4rem;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-img-container{
+    width: 100%;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+    aspect-ratio: 3/4;    
+}
+
+.card-titulo{
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+h1{
+    text-align: center;
+    margin-bottom:1rem ;
+}
+
+button{
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  
+  background: #ffd814;
+  color: #111;
+  
+  font-weight: bold;
+  cursor: pointer;
+  
+  transition: background 0.2s;
+}
+button:hover {
+  background: #f7ca00;
+}
+
+.card-preco{
+  font-weight: bold;
+  color: #082e2b;
+}

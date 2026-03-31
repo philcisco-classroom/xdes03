@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar banner"
+    "sidebar main"
+    "footer footer"
+    ;
+    gap: 10px;
+}
+
+.navbar{
+    grid-area: navbar;
+    background: blue;
+}
+
+.banner{
+    grid-area: banner;
+    background: red;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background: orange;
+}
+
+.main{
+    grid-area: main;
+    background: rgb(0, 255, 234);
+}
+
+.footer{
+    grid-area: footer;
+    background: rgb(179, 0, 255);
+}
